@@ -302,39 +302,159 @@
 
 // console.log(quadruple(5));
 
-const numbers = [2, 5, 8, 7, 9];
+// const numbers = [2, 5, 8, 7, 9];
 
-// without arrow
-const double = numbers.map(function(num) {
-    return num * 2;
-});
-
-//with arrow
-
-const double1 = numbers.map((num) => {
-    return num * 2;
-});
-
-//implicit
-
-const double2 = numbers.map((num) => num * 2);
-
-// console.log({
-//     double: double,
-//     double1: double1,
-//     double2: double2
+// // without arrow
+// const double = numbers.map(function(num) {
+//     return num * 2;
 // });
 
-const evenOdd = numbers.map(function(num) {
-    return num % 2 === 0 ? 'Even' : 'Odd';
-});
+// //with arrow
 
-const exArrEvenOdd = numbers.map((num) => {
-    return num % 2 === 0 ? 'Even' : 'Odd';
-});
+// const double1 = numbers.map((num) => {
+//     return num * 2;
+// });
 
-const impArrEvenOdd = numbers.map((num) => (num % 2 === 0 ? 'Even' : 'Odd'));
+// //implicit
 
-console.log(evenOdd);
-console.log(exArrEvenOdd);
-console.log(impArrEvenOdd);
+// const double2 = numbers.map((num) => num * 2);
+
+// // console.log({
+// //     double: double,
+// //     double1: double1,
+// //     double2: double2
+// // });
+
+// const evenOdd = numbers.map(function(num) {
+//     return num % 2 === 0 ? 'Even' : 'Odd';
+// });
+
+// const exArrEvenOdd = numbers.map((num) => {
+//     return num % 2 === 0 ? 'Even' : 'Odd';
+// });
+
+// const impArrEvenOdd = numbers.map((num) => (num % 2 === 0 ? 'Even' : 'Odd'));
+
+// console.log(evenOdd);
+// console.log(exArrEvenOdd);
+// console.log(impArrEvenOdd);
+
+// FIND
+
+// const movies = [{
+//         hero: 'prabhas',
+//         name: 'billa'
+//     },
+//     {
+//         hero: 'ram',
+//         name: 'devdas'
+//     },
+//     {
+//         hero: 'vijay',
+//         name: 'arjunreddy'
+//     },
+//     {
+//         hero: 'pspk',
+//         name: 'panja'
+//     },
+//     {
+//         hero: 'mb',
+//         name: 'dookudu'
+//     }
+// ];
+
+// const movie = movies.find((movie) => {
+//     return movie.name.includes('panja');
+// });
+
+// console.log(movie);
+
+// const players = ['sehwag', 'AB de Villiers', 'devilliers', 'joeroot', 'brainlara'];
+
+// const player = players.find((player) => player.includes('de'));
+
+// console.log(player);
+
+// FILTER
+
+// const nums = [1, 3, 6, 8, 9, 10];
+
+// const even = nums.filter((num) => {
+//     return num % 2 === 0;
+// });
+
+// console.log(even);
+
+// const colors = [{
+//         color: 'black',
+//         category: 'hue',
+//         type: 'primary',
+//         code: {
+//             rgba: [255, 255, 255, 1],
+//             hex: '#000'
+//         }
+//     },
+//     {
+//         color: 'white',
+//         category: 'value',
+//         code: {
+//             rgba: [0, 0, 0, 1],
+//             hex: '#FFF'
+//         }
+//     },
+//     {
+//         color: 'red',
+//         category: 'hue',
+//         type: 'primary',
+//         code: {
+//             rgba: [255, 0, 0, 1],
+//             hex: '#FF0'
+//         }
+//     },
+//     {
+//         color: 'blue',
+//         category: 'hue',
+//         type: 'primary',
+//         code: {
+//             rgba: [0, 0, 255, 1],
+//             hex: '#00F'
+//         }
+//     },
+//     {
+//         color: 'yellow',
+//         category: 'value',
+//         type: 'primary',
+//         code: {
+//             rgba: [255, 255, 0, 1],
+//             hex: '#FF0'
+//         }
+//     },
+//     {
+//         color: 'green',
+//         category: 'hue',
+//         type: 'secondary',
+//         code: {
+//             rgba: [0, 255, 0, 1],
+//             hex: '#0F0'
+//         }
+//     }
+// ];
+
+// const hue = colors.filter((color) => {
+//     return color.category === 'hue';
+// });
+
+// console.log(hue);
+
+// EVERY
+
+// const words = ['dog', 'cat', 'bats', 'rat'];
+
+// const is3Let = words.every((word) => word.length === 3);
+
+// console.log(is3Let);
+
+// // Some
+
+// const any3Let = words.some((word) => word.length === 3);
+// console.log(any3Let);
