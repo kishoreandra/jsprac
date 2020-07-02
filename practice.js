@@ -458,3 +458,52 @@
 
 // const any3Let = words.some((word) => word.length === 3);
 // console.log(any3Let);
+
+//  sort method using func call backs
+
+// const prices = [1, 22.4, 2.1, 3.6, 11.5];
+
+// console.log(prices.sort()); // bad sort
+
+// const players = [{
+//         name: 'kohli',
+//         price: 100
+//     },
+//     {
+//         name: 'AB',
+//         price: 97
+//     },
+//     {
+//         name: 'Dhoni',
+//         price: 77
+//     },
+//     {
+//         name: 'Gayle',
+//         price: 85
+//     },
+//     {
+//         name: 'Root',
+//         price: 79
+//     },
+
+//     {
+//         name: 'Williamson',
+//         price: 93
+//     },
+
+//     {
+//         name: 'Babar',
+//         price: 89
+//     }
+// ];
+
+// const sortedPlayersAsc = players.concat().sort((a, b) => {
+//     return a.price - b.price;
+// });
+// const sortedPlayersDesc = players.concat().sort((a, b) => {
+//     return b.price - a.price;
+// });
+
+// console.log(players);
+// console.log(sortedPlayersAsc);
+// console.log(sortedPlayersDesc);
