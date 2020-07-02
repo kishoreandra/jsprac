@@ -154,14 +154,187 @@
 // let res = multiplyBy(4);
 // console.log(res(5));
 
-function isBetween(x, y) {
-    return function(num) {
-        return num >= x && num <= y;
-    };
-}
+// function isBetween(x, y) {
+//     return function(num) {
+//         return num >= x && num <= y;
+//     };
+// }
 
-const isChild = isBetween(0, 18);
-console.log(isChild(55));
+// const isChild = isBetween(0, 18);
+// console.log(isChild(55));
 
-const isInEighties = isBetween(1980, 1989);
-console.log(isInEighties(1984));
+// const isInEighties = isBetween(1980, 1989);
+// console.log(isInEighties(1984));
+
+// const numbers = [1, 3, 4, 5, 6];
+
+// // numbers.forEach(function(num) {
+// //     console.log(num * 5);
+// // });
+
+// function triple(n) {
+//     console.log(n * 3);
+// }
+
+// numbers.forEach(triple);
+
+// const movies = [{
+//         hero: 'prabhas',
+//         name: 'billa'
+//     },
+//     {
+//         hero: 'ram',
+//         name: 'devdas'
+//     },
+//     {
+//         hero: 'vijay',
+//         name: 'arjunreddy'
+//     },
+//     {
+//         hero: 'pspk',
+//         name: 'panja'
+//     },
+//     {
+//         hero: 'mb',
+//         name: 'dookudu'
+//     }
+// ];
+
+// movies.forEach(function(movie) {
+//     console.log(movie.hero.toUpperCase() + '-' + movie.name.toUpperCase());
+// });
+
+// const fruits = ['apple', 'banana', 'grapes'];
+
+// fruits.forEach(function(fruit, idx) {
+//     console.log(idx, fruit);
+// });
+
+// const numbers = [1, 2, 3, 4];
+
+// // const double = numbers.map(function(num) {
+// //     return num * 2;
+// // });
+
+// // console.log(double);
+// // console.log(numbers);
+
+// const isEven = numbers.map(function(num) {
+//     return {
+//         number: num,
+//         isEven: num % 2 === 0
+//     };
+// });
+
+// console.log(isEven);
+
+// const players = ['sehwag', 'devilliers', 'joeroot', 'brainlara'];
+
+// const caps = players.map(function(player) {
+//     return player.toUpperCase();
+// });
+
+// // console.log(players);
+
+// // console.log(caps);
+
+// const dotPlayers = players.map(function(player) {
+//     return player.toUpperCase().split('').join('.');
+// });
+
+// console.log(dotPlayers);
+
+// const movies = [{
+//         hero: 'prabhas',
+//         name: 'billa'
+//     },
+//     {
+//         hero: 'ram',
+//         name: 'devdas'
+//     },
+//     {
+//         hero: 'vijay',
+//         name: 'arjunreddy'
+//     },
+//     {
+//         hero: 'pspk',
+//         name: 'panja'
+//     },
+//     {
+//         hero: 'mb',
+//         name: 'dookudu'
+//     }
+// ];
+
+// const heroes = movies.map(function(movie) {
+//     return movie.hero.toUpperCase();
+// });
+
+// console.log(heroes);
+
+// const triple = (x) => {
+//     return x * x;
+// };
+
+// for single param we can exclude paranthesis as x => {}
+
+// const five = triple(5);
+
+// console.log(five);
+
+// const multiply = (x, y) => {
+//     return x * y;
+// };
+
+// console.log(multiply(40, 20));
+
+// to just console log we have to use empty params as :
+
+// const consoleLog = () => {
+//     console.log('i just need an empty param :)');
+// };
+
+// consoleLog();
+
+// implicit return
+
+// const quadruple = (x) => x * 4;
+
+// console.log(quadruple(5));
+
+const numbers = [2, 5, 8, 7, 9];
+
+// without arrow
+const double = numbers.map(function(num) {
+    return num * 2;
+});
+
+//with arrow
+
+const double1 = numbers.map((num) => {
+    return num * 2;
+});
+
+//implicit
+
+const double2 = numbers.map((num) => num * 2);
+
+// console.log({
+//     double: double,
+//     double1: double1,
+//     double2: double2
+// });
+
+const evenOdd = numbers.map(function(num) {
+    return num % 2 === 0 ? 'Even' : 'Odd';
+});
+
+const exArrEvenOdd = numbers.map((num) => {
+    return num % 2 === 0 ? 'Even' : 'Odd';
+});
+
+const impArrEvenOdd = numbers.map((num) => (num % 2 === 0 ? 'Even' : 'Odd'));
+
+console.log(evenOdd);
+console.log(exArrEvenOdd);
+console.log(impArrEvenOdd);
