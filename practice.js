@@ -507,3 +507,44 @@
 // console.log(players);
 // console.log(sortedPlayersAsc);
 // console.log(sortedPlayersDesc);
+
+// REDUCE
+
+// const nums = [12, 25, 45, 85, 6, 25, 14];
+
+// const sumOfNums = nums.reduce((accumulator, currentVal) => {
+//     return accumulator + currentVal;
+// });
+
+// // console.log(sumOfNums);
+
+// const avgOfNums = sumOfNums / nums.length;
+
+// console.log(avgOfNums);
+
+// It must have a capital letter.
+// It must contain at least one number.
+// It must contain a punctuation mark => (. , ! ? : ; )
+// It cannot have the word "password" in the string.
+// It must be longer than 7 characters and shorter than 31 characters.
+
+// const res = function(pass) {
+//     passArr = pass.split('');
+//     let checkUpperCase = passArr.some((char) => char === char.toUpperCase());
+//     let checkNo = passArr.some((char) => Number.isInteger(parseInt(char)));
+//     let checkPuncMark = /[.|,|!|?|:|;]/.test(pass);
+//     if (pass == 'password') {
+//         var isContainPassword = false;
+//     } else {
+//         var isContainPassword = true;
+//     }
+//     let passLimit = pass.length > 7 && pass.length < 31;
+
+//     if (checkUpperCase && checkNo && checkPuncMark && isContainPassword && passLimit) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+// console.log(res('turkey90AAA'));
