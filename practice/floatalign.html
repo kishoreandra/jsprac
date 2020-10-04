@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Align</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+        }
+        
+        .box {
+            border: 2px solid purple;
+            padding: 20px;
+            margin-bottom: 10px;
+            font-size: small;
+        }
+        
+        .box h3 {
+            text-align: center;
+        }
+        
+        #box3 {
+            float: right;
+            width: 68%;
+        }
+        
+        #box2 {
+            float: left;
+            width: 30%;
+        }
+        
+        .clr {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aperiam maxime cum. Accusamus, aliquam repudiandae!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, illum!</p>
+        </div>
+
+        <div class="box" id="box2">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aperiam maxime cum. Accusamus, aliquam repudiandae!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, illum!</p>
+        </div>
+        <div class="box" id="box3">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aperiam maxime cum. Accusamus, aliquam repudiandae!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, illum!</p>
+        </div>
+        <div class="clr">
+
+        </div>
+        <div class="box" id="box4">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aperiam maxime cum. Accusamus, aliquam repudiandae!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, illum!</p>
+        </div>
+    </div>
+</body>
+
+</html>

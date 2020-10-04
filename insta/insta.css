@@ -1,0 +1,130 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    background-color: #FAFAFA;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* signup container */
+
+.signup-container {
+    margin: auto;
+    max-width: 350px;
+    background-color: #ffffff;
+    border: 1px solid rgb(212, 212, 212);
+    line-height: 1.8em;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.login h1 {
+    font-family: cursive;
+    padding: 15px 0;
+}
+
+.message {
+    padding: 10px 0;
+    color: #8E8E8E;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 8px 0;
+    margin: 10px 0;
+}
+
+.btn-login {
+    background-color: #0095F6;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.seperator {
+    padding: 10px 0;
+}
+
+.first,
+.last,
+span {
+    display: inline-block;
+    color: rgb(212, 212, 212);
+    font-weight: 600;
+}
+
+.first {
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+}
+
+.last {
+    width: 40%;
+    float: right;
+    margin-top: 10px;
+}
+
+.form-wrap {
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+.form-wrap input {
+    padding: 10px 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+    background-color: #FAFAFA;
+}
+
+.form-wrap input::placeholder {
+    color: rgb(155, 155, 155);
+}
+
+.btn-signup {
+    background-color: #B2DFFC;
+    color: #ffffff;
+}
+
+.terms {
+    padding: 5px 0;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    line-height: 1.1em;
+}
+
+.login-container {
+    margin: auto;
+    max-width: 350px;
+    background-color: #ffffff;
+    border: 1px solid rgb(212, 212, 212);
+    line-height: 1.8em;
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 10px;
+}
+
+.login-container p {
+    font-size: 13px;
+}
+
+.login-container a {
+    color: #0095f6;
+}

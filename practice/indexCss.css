@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* multiple selectors */
+
+.green,
+.anothergreen {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* element selectors */
+
+.sample h2 {
+    color: palevioletred;
+}
+
+
+/* class selector */
+
+.paragraph {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8em;
+    font-size: 18px;
+}
+
+
+/* nested selectors */
+
+.sample p span {
+    font-weight: bolder;
+}
+
+
+/* id selector */
+
+#myId {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: rgb(255, 52, 255);
+    background-color: rosybrown;
+    line-height: 1.8em;
+}
+
+.box1 {
+    border: 3px dotted red;
+    background-color: rosybrown;
+}
+
+.box2 {
+    border: 3px dotted red;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+}
+
+.box3 {
+    background-image: url('https://source.unsplash.com/collection/190727/');
+    height: 150px;
+    width: 250px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pad {
+    border: 2px solid violet;
+    margin: 20px 20px;
+    background-color: thistle;
+    box-sizing: border-box;
+}
+
+.padh {
+    font-style: italic;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 10px;
+    /* text-align: justify; */
+}
+
+.padp {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
